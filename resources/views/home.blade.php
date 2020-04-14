@@ -76,7 +76,7 @@
                                                 <div class="media align-items-center">
                                                     <div class="media-img-wrap d-flex mr-10">
                                                         <div class="avatar avatar-xs">
-                                                            <span class="avatar-text avatar-text-primary rounded-circle">
+                                                            <span class="avatar-text @if($operation->status == 'success') avatar-text-primary @else avatar-text-danger @endif rounded-circle">
                                                                 <span class="initial-wrap"><span>
                                                                     {{ mb_substr($operation->subject_user->name, 0, 1) }}
                                                                 </span></span>
@@ -91,7 +91,7 @@
                                                 <div class="media align-items-center">
                                                     <div class="media-img-wrap d-flex mr-10">
                                                         <div class="avatar avatar-xs">
-                                                            <span class="avatar-text avatar-text-danger rounded-circle"><span class="initial-wrap">
+                                                            <span class="avatar-text @if($operation->status == 'success') avatar-text-primary @else avatar-text-danger @endif rounded-circle"><span class="initial-wrap">
                                                                 <span><i style="font-size: 13px" class="ion ion-md-swap"></i></span>
                                                             </span></span>
                                                         </div>

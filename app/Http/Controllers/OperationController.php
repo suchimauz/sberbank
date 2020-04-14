@@ -39,7 +39,7 @@ class OperationController extends Controller
     {
         DB::transaction(function () use ($request) {
             $user = User::find(auth()->user()->id);
-            $check = $request->amount < $user->balance();
+            $check = $request->amount <= $user->balance();
 
             if($request->subject != NULL && $check && $request->type == 'transfer') {
                 Operation::create([
