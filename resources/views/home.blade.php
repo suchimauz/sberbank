@@ -76,7 +76,7 @@
                                                 <div class="media align-items-center">
                                                     <div class="media-img-wrap d-flex mr-10">
                                                         <div class="avatar avatar-xs">
-                                                            <span class="avatar-text @if($operation->status == 'success') avatar-text-primary @else avatar-text-danger @endif rounded-circle">
+                                                            <span class="avatar-text @if($operation->status == 'success') avatar-text-success @else avatar-text-danger @endif rounded-circle">
                                                                 <span class="initial-wrap"><span>
                                                                     {{ mb_substr($operation->subject_user->name, 0, 1) }}
                                                                 </span></span>
