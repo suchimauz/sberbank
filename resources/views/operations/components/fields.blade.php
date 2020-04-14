@@ -1,0 +1,1 @@
+<input type="number" name="amount" class="form-control mt-15" placeholder="Сумма" required>
