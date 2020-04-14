@@ -27,6 +27,12 @@
     <!-- Custom CSS -->
     <link href="dist/css/style.css" rel="stylesheet" type="text/css">
 
+    <style>
+        pre {
+            display: none;
+        }
+    </style>
+
     <script>
         window.Laravel = <?php echo json_encode([
             'csrfToken' => csrf_token(),
